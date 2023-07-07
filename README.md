@@ -3,7 +3,7 @@
 ## Hal-Hal yang dibutuhkan antara lain
 1. Memiliki Website
 2. Membeli domain di niagahoster(contohnya)
-3. Buid website di netlify
+3. Build website di netlify
 4. Membuat custom domain dan subdomain
 
 # Step by step membuat website dengan custom domain
