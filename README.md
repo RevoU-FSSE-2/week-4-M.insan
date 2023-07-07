@@ -8,7 +8,7 @@
 
 # Step by step membuat website dengan custom domain
 1. Langkah pertama membuat website sederhana terlebih dahulu. Contohnya sebagai berikut.
-![Gambar screenshot website yang belum dipasang domain](screenshot\screenshot-website-blm-didomain.png)
+![Gambar screenshot website yang belum dipasang domain](screenshot/screenshot-website-blm-didomain.png)
 tempilan website ini saya buat di vs code. Website ini berisi portofolio saya. Untuk kodingannya ada di repository saya.
 2. Langkah Kedua membeli domain di Niagahoster
 Domain yang saya beli .site harga cukup terjangkau Rp 15000 untuk satu tahun. 
