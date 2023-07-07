@@ -1,0 +1,310 @@
+body{
+    margin: auto;
+}
+@font-face {
+    font-family: "Caprasimo";
+    src: url(font/Caprasimo-Regular.ttf);
+}
+@font-face {
+    font-family: "Merriweather";
+    src: url(font/Merriweather-Regular.ttf);
+}
+@font-face {
+    font-family: "Sansita";
+    src: url(font/Sansita-Bold.ttf);
+}
+nav{
+    background-color: #0E2954;
+    color:#84A7A1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+nav img{
+    width: 100px;
+    height: 100px;
+}
+nav b{
+    font-size: xx-large;
+    text-align: center;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Sansita";
+}
+.topnav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.fa-brands{
+    font-size: 30px ;
+}
+.topnav a{
+    color: #84A7A1;
+    font-size: large;
+}
+.topnav a:hover{
+  color: white;
+}
+
+header{
+    background-color:#176B87;
+    color: #64CCC5;
+    text-align: center;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Caprasimo";
+    animation: 3s slidein;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+}
+header p{
+    font-size: large;
+}
+header h1{
+    margin: 0px;
+}
+.artikel-data-diri{
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#portofolio{
+    border: 1px solid black;
+    width: 800px;
+    height: 800px;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+#portofolio p{
+    margin: 5px 10px;
+    font-family: "Merriweather";
+}
+.photoku{
+    width: 200px;
+    height: 200px;
+    margin: 10px 0px;
+    border-radius: 5%;
+}
+.photoku:hover{
+    animation: 0.5s rotate;
+    filter: grayscale(50%)
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#portofolio h2{
+    margin: 10px;
+}
+.pengalaman{
+    margin:0px 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: start;
+}
+.documentation{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,500px);
+    grid-gap: 20px;
+}
+.documentation-project{
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+}
+#item-1{
+    grid-row: 1/span 2;
+    grid-column: 1/span 2;
+    transition: 2s;
+    filter: grayscale(100%);
+}
+#item-1:hover{
+    transition: 3s ease-in-out;
+    filter: grayscale(0%);
+}
+#item-2{
+    grid-row: 1;
+    grid-column: 3/span 2;
+    transition: 2s;
+    filter: grayscale(100%);
+}
+#item-2:hover{
+    grid-row: 1;
+    grid-column: 3/span 2;
+    transition: 3s ease-in-out;
+    filter: grayscale(0%);
+}
+#item-3{
+    grid-row: 2;
+    grid-column: 3/span 2;
+    transition: 2s;
+    filter: grayscale(100%);
+}
+#item-3:hover{
+    grid-row: 2;
+    grid-column: 3/span 2;
+    filter: grayscale(0%);
+}
+.judul-documentation-project{
+   text-align: center;
+}
+.video-uji-coba-mask-detector{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.video-uji-coba-mask-detector iframe{
+    border-radius: 2%;
+}
+.fa-moon{
+    font-size: 30px ;
+}
+body{
+    background-color: white;
+    color: black;
+}
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+.dark-mode #portofolio{
+    border: 1px solid white;
+}
+footer{
+    margin-top: 5px;
+    font-size: medium;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+}
+.icon{
+    display: none;
+}
+@media only screen and (max-width:768px){
+    .mobile-container{
+        max-width: 100vmax;
+        margin: auto;
+        background-color: transparent;
+        /* height: 500px; */
+        color: black;
+        border-radius: 10px;
+    }
+    .topnav{
+        display: none;
+        background-color: transparent;
+    }
+    #portofolio {
+        border: 1px solid black;
+        width: 300px;
+        height: 800px;
+        border-radius: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        font-size:15px;
+    }
+    .documentation {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,350px);
+        grid-gap: 20px;
+        margin: 0px 10px;
+    }
+    #item-1{
+        grid-row: 1/span 2;
+        grid-column: 1/span 2;
+        transition: 2s ease-in-out;
+        filter: grayscale(100%);
+    }
+    #item-1:hover{
+        transition: 3s ease-in-out;
+        filter: grayscale(0%);
+    }
+    #item-2{
+        grid-row: 1;
+        grid-column: 3/span 2;
+        transition: 2s ease-in-out;
+        filter: grayscale(100%);
+    }
+    #item-2:hover{
+        transition: 3s ease-in-out;
+        filter: grayscale(0%);
+    }
+    #item-3{
+        grid-row: 2;
+        grid-column: 3/span 2;
+        transition: 2s ease-in-out;
+        filter:grayscale(100%)
+    }
+    #item-3:hover{
+        transition: 3s ease-in-out;
+        filter:grayscale(0%)
+    }
+    .video-uji-coba-mask-detector iframe{
+        width: 300px;
+        height: 315px;
+    }
+    nav{
+        background-color: #0E2954;
+        position: relative;
+    }
+    .icon{
+        display: flex;
+        position: absolute;
+        right: 22px;
+        top: 59px;
+        justify-content: center;
+        align-items: center;
+        font-size: large;
+        color:#176B87;
+    }
+    .icon:hover{
+        color: white;
+    }
+    .topnav a{
+        padding: 14px 16px;
+        display:inline-block;
+        color: #84A7A1;
+        margin: 5px 0px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .topnav a:hover{
+color: white ;
+    }
+    nav .logo{
+        position: relative;
+        overflow: hidden;
+    }
+}
