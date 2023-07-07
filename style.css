@@ -211,6 +211,24 @@ footer{
     display: none;
 }
 @media only screen and (max-width:768px){
+    body{
+        background-color: white;
+        color: black;
+    }
+    .dark-mode{
+        background-color: black;
+        /* color: white; */
+    }
+    .dark-mode #portofolio{
+        border: 1px solid white;
+        color: white;
+    }
+    .dark-mode .judul-documentation-project{
+color: white;
+    }
+    .dark-mode .video-uji-coba-mask-detector{
+        color: white;
+    }
     .mobile-container{
         max-width: 100vmax;
         margin: auto;
